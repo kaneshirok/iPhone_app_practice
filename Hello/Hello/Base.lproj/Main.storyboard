@@ -21,25 +21,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG1-K9-QsQ">
-                                <rect key="frame" x="166" y="141" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t6-YT-Gyv">
+                                <rect key="frame" x="167" y="150" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xer-2M-jr4">
-                                <rect key="frame" x="164" y="318.5" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9O-g8-xtg">
+                                <rect key="frame" x="165" y="319" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sayHello" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXc-5l-a6a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gG1-K9-QsQ" firstAttribute="centerX" secondItem="Xer-2M-jr4" secondAttribute="centerX" id="0QQ-Z5-bXF"/>
-                            <constraint firstItem="gG1-K9-QsQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="121" id="NyW-DW-pKa"/>
-                            <constraint firstItem="gG1-K9-QsQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sJb-zF-JiV"/>
-                            <constraint firstItem="Xer-2M-jr4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z4j-cf-x8E"/>
+                            <constraint firstItem="3t6-YT-Gyv" firstAttribute="centerX" secondItem="g9O-g8-xtg" secondAttribute="centerX" id="1Kb-oH-vHl"/>
+                            <constraint firstItem="3t6-YT-Gyv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2V0-Uy-kGA"/>
+                            <constraint firstItem="g9O-g8-xtg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oRQ-Z5-jd7"/>
+                            <constraint firstItem="3t6-YT-Gyv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="omb-oF-mTc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="3t6-YT-Gyv" id="B2k-20-f02"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
